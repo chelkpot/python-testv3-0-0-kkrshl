@@ -2,15 +2,18 @@
 
 def solve():
 # Ниже пишите решение задачи
-    n = int(input())
-hundreds = n // 100
-twentys = n % 100 // 20
-tens = n % 20 // 10
-fives = n % 10 // 5
-units = n % 5 // 1
-banknotes = hundreds + twentys + tens + fives + units
-print(banknotes)
-
+n=int(input())
+count=0
+count += n // 100 
+n %= 100
+count += n // 20   
+n %= 20
+count += n // 10   
+n %= 10
+count += n // 5    
+n %= 5
+count += n         
+print(count)
 
 # Код ниже не трогать! он нужен для тестов
 if __name__ == "__main__":

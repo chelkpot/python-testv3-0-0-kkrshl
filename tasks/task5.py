@@ -2,13 +2,11 @@
 
 def solve():
 # Ниже пишите решение задачи
-n = int(input())
-h = n // 3600
-n = n % 3600
-m = n // 60
-n = n % 60
-print(f'{h:02}:{m:02}:{n:02}')
-
+n=int(input())
+hours=n // 3600
+minutes=(n % 3600) // 60
+seconds=n % 60
+print(f"{hours}:{minutes:02d}:{seconds:02d}")
    
 # Код ниже не трогать! он нужен для тестов
 if __name__ == "__main__":

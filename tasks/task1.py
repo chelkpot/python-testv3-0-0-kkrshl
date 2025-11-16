@@ -2,12 +2,12 @@
 
 def solve():
 # Ниже пишите решение задачи
-a = int(input())
-x = a // 100
-y = a %100 //10
-z = a % 10
-print(x + y + z)
-
+n=int(input())
+hundreds=n // 100
+tens=(n // 10) % 10
+units=n % 10
+result=hundreds + tens + units
+print(result)
     
 # Код ниже не трогать! он нужен для тестов
 if __name__ == "__main__":
